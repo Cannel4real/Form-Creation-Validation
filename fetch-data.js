@@ -25,8 +25,6 @@ async function fetchUserData() {
 
 // Call the function to fetch user data when the page loads
 
-window.addEventListener('DOMContentLoaded', () => {
-    fetchUserData();
-});
+window.addEventListener('DOMContentLoaded', fetchUserData());
 
 fetchUserData();
