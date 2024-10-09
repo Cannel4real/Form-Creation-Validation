@@ -15,16 +15,13 @@ async function fetchUserData() {
     });
     
     dataContainer.appendChild(userList);
-    console.log(userList);
+    // console.log(userList);
         
     } catch (error) {
         dataContainer.textContent ='Failed to load user data.'
-    }
-    
-}
-
-// Call the function to fetch user data when the page loads
-
-window.addEventListener('DOMContentLoaded', fetchUserData());
-
-fetchUserData();
+    };
+};
+window.addEventListener('DOMContentLoaded', () => {
+    console.log(fetchUserData());
+     fetchUserData();
+});
